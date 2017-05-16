@@ -1,0 +1,34 @@
+page-login {
+  .scroll-content {
+    display:          flex;
+    align-items:      center;
+    background-color: #f0f0f0;
+  }
+  .login-card {
+    margin:        auto;
+    overflow:      hidden;
+    background:    #fff;
+    box-shadow:    0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    .login-header {
+      margin:     -1.6rem -1.6rem 1.6rem;
+      padding:    .8rem;
+      background: linear-gradient(to right, color($colors, uta_yellow) 0%, lighten(color($colors, uta_yellow), 10%) 100%);
+      img {
+        margin:     0 auto;
+        display:    block;
+        max-height: 250px;
+      }
+    }
+  }
+
+  ion-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 90px 1px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+}

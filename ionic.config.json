@@ -1,0 +1,10 @@
+{
+  "name": "UTAapp",
+  "app_id": "73f2d917",
+  "v2": true,
+  "typescript": true,
+  "proxies": [{
+    "path": "/utaAPI",
+    "proxyUrl": "http://desasisaca.uta.cl/wwwregistraduria/public/movil/index/"
+  }]
+}

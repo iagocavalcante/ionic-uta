@@ -1,0 +1,44 @@
+<ion-content padding>
+
+  <ion-header>
+
+  <ion-navbar color="uta_yellow">
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-navbar>
+
+</ion-header>
+ 
+  <form class="login-card" [formGroup]="loginForm" novalidate ion-grid fixed padding>
+
+    <div class="login-header">
+      <img src="assets/img/logo-uta.png">
+    </div>
+
+    <ion-item>
+      <ion-label floating>RUT</ion-label>
+      <ion-input type="text" formControlName="rut" clearInput="true"></ion-input>
+    </ion-item>
+    <div class="form-error" *ngIf="!loginForm.controls.rut.valid && (loginForm.controls.rut.dirty || loginForm.controls.rut.touched)">
+      <p [hidden]="!loginForm.controls.rut.errors.required">Campo requerido.</p>
+      <p [hidden]="!loginForm.controls.rut.errors.norut">Usuario no se encuentra registrado.</p>
+    </div>
+
+    <ion-item>
+      <ion-label floating>Contraseña</ion-label>
+      <ion-input type="password" formControlName="clave" clearInput="true"></ion-input>
+    </ion-item>
+    <div class="form-error icon-left" *ngIf="!loginForm.controls.clave.valid && (loginForm.controls.clave.dirty || loginForm.controls.clave.touched)">
+      <p [hidden]="!loginForm.controls.clave.errors.required">Campo requerido.</p>
+      <p [hidden]="!loginForm.controls.clave.errors.wrongpass">La contraseña es incorrecta.</p>
+    </div>
+
+    <p text-center margin>
+      <button ion-button color="uta_yellow" class="primary-action" (click)="login()" [disabled]="loginForm.invalid">Iniciar sesión</button>
+    </p>
+
+  </form>
+
+</ion-content>
