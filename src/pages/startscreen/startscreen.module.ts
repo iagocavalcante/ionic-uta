@@ -13,4 +13,6 @@ import { StartscreenPage } from './startscreen';
     StartscreenPage
   ]
 })
-export class StartscreenModule {}
+export class StartscreenModule {
+  
+}

@@ -18,7 +18,8 @@ export class StartscreenPage {
 
   goToLogin()
   {
-    this.navCtrl.push('LoginPage');
+    this.navCtrl.push("LoginPage",  {
+            animate: false});
   }
 
 }

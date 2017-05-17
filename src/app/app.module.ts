@@ -12,6 +12,7 @@ import { HttpModule } from '@angular/http';                        // MODULO PAR
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // MODULOS PARA HACER LOS FORMULARIOS REACTIVOS
 
 import { UtaService } from '../providers/uta-service';  // SERVICIOS
+import { StorageService } from '../providers/storage-service';  // SERVICIOS
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { UtaService } from '../providers/uta-service';  // SERVICIOS
   ],
   providers: [
     UtaService,
+    StorageService,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

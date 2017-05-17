@@ -2,14 +2,14 @@ import { Injectable }            from '@angular/core';
 import { Http, URLSearchParams } from '@angular/http';
 
 
-//ESTO PARA QUE??
+//PARA TRABAJAR LAS PETICIONES HTTP
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/map';
 
 import { Events }  from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 
-// URLS
+//URLS
 export class URLs {
   //public static base = "http://desasisaca.uta.cl/wwwregistraduria/public/movil/index/";
   public static base = "/utaAPI/"; // USANDO PROXY PARA EVITAR ERRORES DE CORS

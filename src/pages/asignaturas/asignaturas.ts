@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { UtaService } from '../../providers/uta-service';
+import { StorageService } from '../../providers/storage-service';
 
 
 @IonicPage()
@@ -9,19 +9,19 @@ import { UtaService } from '../../providers/uta-service';
   templateUrl: 'asignaturas.html',
 })
 export class AsignaturasPage {
-  public user: any;
+  public inscripcion: any;
 
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
-    public _uta:  UtaService
-    ) {
-  }
+    public _st:  StorageService
+    ){}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Asignaturas');
-    this._uta.getAuth().then( auth => {
-      this.user = auth;
+    this._st.getInscripcion().then( data => {
+      this.inscripcion = data;
+      console.log("objetoPersonal", this.inscripcion);
     });
   }
 

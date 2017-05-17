@@ -11,6 +11,7 @@ import { UtaService } from '../providers/uta-service';
 })
 
 export class MyApp implements OnInit {
+
   @ViewChild(Nav) nav: Nav;
   rootPage: any;
   pages:    Array<{title: string, component: any, icon: string}>;
@@ -26,6 +27,7 @@ export class MyApp implements OnInit {
     public menuCtrl:     MenuController,
     public events:       Events
   ) {
+    
     this.user  = null; // DATOS DE USUARIO ACTUAL
 
     // PAGINAS DEL MENU - TODAS VAN AL HOMEPAGE
@@ -57,7 +59,7 @@ export class MyApp implements OnInit {
         // this.rootPage = "HomePage";
       } else {
       // EN CASO CONTRARIO DESACTIVAR MENU E IR A PAGINA 'LoginPage'
-        this.menuCtrl.enable(false);
+        //this.menuCtrl.enable(false);
         this.nav.setRoot('StartscreenPage', {}, { animate: true, direction: 'forward' });
         // this.rootPage = "LoginPage";
       }

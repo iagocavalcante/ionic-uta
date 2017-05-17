@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { UtaService } from '../../providers/uta-service';
+import { StorageService } from '../../providers/storage-service';
 
 @IonicPage()
 @Component({
@@ -13,14 +13,15 @@ export class MydataPage {
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
-    public _uta: UtaService) {
+    public st_service: StorageService) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Mydata');
 
-    this._uta.getAuth().then( auth => {
+    this.st_service.getPersonal().then( auth => {
       this.user = auth;
+      console.log("objetoPersonal", this.user);
     });
   }
 
