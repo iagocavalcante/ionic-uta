@@ -20,7 +20,8 @@ export class AsignaturasPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad Asignaturas');
     this._st.getInscripcion().then( data => {
-      this.inscripcion = data;
+      console.log("Data da api", data[42]);
+      this.inscripcion = data[42];
       console.log("objetoPersonal", this.inscripcion);
     });
   }
