@@ -36,7 +36,7 @@
         "ng2-validation": "4.2.0",
         "onesignal-cordova-plugin": "2.4.7",
         "rxjs": "5.1.1",
-        "sw-toolbox": "3.4.0",
+        "sw-toolbox": "3.6.0",
         "zone.js": "0.8.29"
     },
     "devDependencies": {
