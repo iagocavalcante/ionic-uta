@@ -37,7 +37,7 @@
         "onesignal-cordova-plugin": "2.5.0",
         "rxjs": "6.5.2",
         "sw-toolbox": "3.6.0",
-        "zone.js": "0.9.1"
+        "zone.js": "0.10.0"
     },
     "devDependencies": {
         "@ionic/app-scripts": "3.2.4",
