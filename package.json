@@ -34,7 +34,7 @@
         "ionic-plugin-keyboard": "2.2.1",
         "ionicons": "4.6.2",
         "ng2-validation": "4.2.0",
-        "onesignal-cordova-plugin": "2.5.0",
+        "onesignal-cordova-plugin": "2.5.1",
         "rxjs": "6.5.2",
         "sw-toolbox": "3.6.0",
         "zone.js": "0.10.0"
