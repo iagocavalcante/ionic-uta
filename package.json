@@ -35,7 +35,7 @@
         "ionicons": "5.0.0",
         "ng2-validation": "4.2.0",
         "onesignal-cordova-plugin": "2.8.3",
-        "rxjs": "6.5.4",
+        "rxjs": "6.6.0",
         "sw-toolbox": "3.6.0",
         "zone.js": "0.10.2"
     },
